@@ -12,17 +12,34 @@
     </head>
     <body>
         <header>
-        <div class="searchBar">
-          <h1>Search Your Favorite Movies Here</h1>
+        <div id="searchBar">
+          <h1>Search Your Favorite Movies In One Place</h1>
+          <p class="Intro">
+            Search Now.
+            <br>
+            Watch at your convenience!
+          </p>
           <!-- show movie title and description here-->
+          </div>
+
+          <div class="movieDetails">
+            <div id="detailed-info">
+                <p id="results"></p>
+                <img
+                id="image"/>
+          </div>
+          </div>
         <form id="movie-form">
         <input type="text" placeholder="Search by Title or Name" class="search movie" name="movies" />
         <input type="submit" value="Search Results"/>
         </form>
         <button id="reset-btn">Reset Search</button>
+
+        </div>
+
+        </header>
+
     </div>
-
-        <div id="detailed-movieInfo"></div>
-
-    </body>
-    </html>
+    <!-- display movie search results here-->
+  </body>
+</html>

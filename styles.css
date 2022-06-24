@@ -1,0 +1,75 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+* {
+box-sizing: border-box;
+}
+
+html, body {
+    background-color: coral;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+#searchBar {
+height: 15vh;
+ text-align: left;
+ background-color: rgb(red, green, blue);
+ color: blue;
+ padding: 0.5em;
+}
+
+.Intro {
+    height: 10vh;
+    text-align: left;
+    padding: 0.5em;
+
+}
+
+h1 {
+background-color: greenyellow;
+ align-self: center;
+ margin-left: 26;
+
+
+
+ } 
+#searchBar span {
+    padding: 4%;
+    height: 80%;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 3em;
+    border: 2px solid white;
+}
+
+.movieDetails {
+    height: 400px;
+    padding: 30px;
+    font-size: 24px;
+    border: darkblue;
+    text-align: center;
+}
+
+input[type="text"] {
+    background-color: white;
+    font-size: 20px;
+}
+input[type="submit"], button {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#image {
+    height: 350px;
+    width: 350px;
+    background-color: black;
+}
+
+
