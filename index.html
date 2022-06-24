@@ -8,22 +8,21 @@
 
         <title>MOVIE SEARCH APP</title>
         <script src="src/index.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
     <body>
-        <div class="search bar">
-          <h1>You Fancy A Movie Tonight?</h1>
-        </div>
-        <div class="searchInfo">
-            <h2>Search Your Favorite Movies Here</h2>
-        </div>
-
-        <div id="search details">
+        <header>
+        <div class="searchBar">
+          <h1>Search Your Favorite Movies Here</h1>
+          <!-- show movie title and description here-->
         <form id="movie-form">
         <input type="text" placeholder="Search by Title or Name" class="search movie" name="movies" />
         <input type="submit" value="Search Results"/>
         </form>
         <button id="reset-btn">Reset Search</button>
     </div>
+
+        <div id="detailed-movieInfo"></div>
+
     </body>
     </html>
