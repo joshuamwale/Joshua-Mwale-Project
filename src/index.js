@@ -24,15 +24,14 @@ function renderOneMovie(movie) {
 const input = document.getElementById("search-movie")
 
      //adding event listeners  - click
-searchResults.addEventListener("click", () => {
-const searchResults = document.getElementById("search results")
-
+document.querySelector('Search Results').addEventListener("click", (e) => {
+    console.log(e)
 })
 //Fetch requests
 //Get Fetch requests for all our movies resources
 
 function displayAllMovies() {
-    fetch("http://localhost:3000/movies")
+    fetch("https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010")
     .then(response => response.json())
     .then(movieDetails => movieDetails.forEach(movie => renderOneMovie(movie)))
     console.log("before fetch returns")
@@ -45,7 +44,6 @@ function initialize() {
     console.log('after display All Movies')
     //movieDetails.forEach(movie => renderOneMovie(movie))
 }
-
 initialize()
 
 //Reset search
