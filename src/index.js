@@ -1,15 +1,11 @@
      //DOMContentLoaded to ensure DOM is loaded before running my index.js file
 
 document.addEventListener("DOMContentLoaded", function() {
-const apiurl = "https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010"
-
-const imagePath = "https://imdb-api.com/images/original/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6800_AL_.jpg";
-
-let url = "http://localhost:3000/movies"
-
+const apiurl = "https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010";
 
 const movieDetails = document.getElementById("detailed-info");
-   //DOM Render one movie function
+   
+//DOM Render one movie function
 
 function renderOneMovie(movie) {
     movieDetails.innerHTML = "";
