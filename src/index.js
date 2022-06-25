@@ -4,10 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
     displayAllMovies()
 })
 
-const APIURL = https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010
-const url = http://localhost:3000/movies
+const apiURL = "https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010"
 
-const results = document.getElementById("detailed-info");
+const imagePath = "https://imdb-api.com/images/original/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6800_AL_.jpg";
+
+baseUrl(url)
+url = "http://localhost:3000/movies"
+
+
+
+const movieDetails = document.getElementById("detailed-info");
 const form = document.getElementById("movie-form");
 const searchMovies = document.getElementById("search-movie")
 
@@ -15,34 +21,29 @@ const searchMovies = document.getElementById("search-movie")
 //Fetch requests
 //Get Fetch requests for all our movies resources
 
-searchMovies(APIURL);
+searchMovies(apiURL);
 async function searchMovies(url) {
     const response = await fetch(url);
     const responseData = await response.json();
     console.log(responseData);
     displayMovies(responseData.results);
+};
 
+function displayMoviesMovies() {
+    movieDetails.innerHTML = "";
+    const { resultType, title, description } = movie;
+    const movieElement = document.getElementById("results")
+    movieElement.innerHTML = `
+    <img
+    src="${resultType + title + description}"
+    alt="${id}"`
 }
 
-
-
-
-displayMovies(movieDetails);
-let API = "https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010"
-//filling in the function
-function displayMovies(movieDetails) {
-const response = fetch("https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010");
-const movieDetails = response.json();
-console.log(movieDetails);
-displayMovies(movieDetails.results)
-
-
-
-const characterImage = document.getElementById("image")
-characterImage.innerText = movieDetails.results
-//adding event listeners - click
+//adding event listeners  - click
 searchResults.addEventListener("click", () => {
 const movieForm = document.getElementById("results")
+
+//Form reset
 
 let form = document.querySelector("movie-form")
 addEventListener("submit", (event) => {
@@ -51,6 +52,7 @@ toSearch(event.target.movie-form.value)
 formReset()
 })
 
+//Reset search
 function toSearch(event) {
 let input = document.querySelector("movie-form")
 let button = document.getElementById("button")
