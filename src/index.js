@@ -49,7 +49,7 @@ let form = document.querySelector("movie-form")
 addEventListener("submit", (event) => {
 event.preventDefault()
 toSearch(event.target.movie-form.value)
-formReset()
+form.reset()
 })
 
 //Reset search
