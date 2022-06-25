@@ -1,8 +1,5 @@
 {
-  "searchType": "Movie",
-  "expression": "inception 2010",
-  "results": 
-[
+  "movies": [
   {
   "id": "tt1375666",
   "resultType": "Title",
@@ -10,6 +7,7 @@
   "title": "Inception",
   "description": "(2010)"
   },
+
   {
   "id": "tt1790736",
   "resultType": "Title",
@@ -38,6 +36,6 @@
   "title": "Inception: 4Movie Premiere Special",
   "description": "(2010 TV Movie)"
   }
-],
-  "errorMessage": ""
+]
+  
 }
