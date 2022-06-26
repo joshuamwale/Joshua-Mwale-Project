@@ -1,20 +1,20 @@
 {
-  "movies": [
+  [
+
   {
   "id": "tt1375666",
   "resultType": "Title",
   "image": "https://imdb-api.com/images/original/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6800_AL_.jpg",
   "title": "Inception",
   "description": "(2010)"
-  },
-
+  }
   {
   "id": "tt1790736",
   "resultType": "Title",
   "image": "https://imdb-api.com/images/original/MV5BMjE0NGIwM2EtZjQxZi00ZTE5LWExN2MtNDBlMjY1ZmZkYjU3XkEyXkFqcGdeQXVyNjMwNzk3Mjk@._V1_Ratio0.6800_AL_.jpg",
   "title": "Inception: The Cobol Job",
   "description": "(2010 Video)"
-  },
+  }
   {
   "id": "tt5295990",
   "resultType": "Title",
@@ -36,6 +36,5 @@
   "title": "Inception: 4Movie Premiere Special",
   "description": "(2010 TV Movie)"
   }
-]
-  
-}
+  ]
+  },

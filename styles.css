@@ -57,6 +57,7 @@ background-color: greenyellow;
 input[type="text"] {
     background-color: white;
     font-size: 20px;
+
 }
 input[type="submit"], button {
     background-color: blue;

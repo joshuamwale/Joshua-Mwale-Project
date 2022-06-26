@@ -6,4 +6,4 @@ The core code for my app structure is found in the `index.html` file. Styling of
 
 The `src/index.js` file hosts the code for manipulating the app's features after the DOM has loaded. 
 
-The base URL for the API I am using is [https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010]
+The API url I am fetching data from is [https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010]
