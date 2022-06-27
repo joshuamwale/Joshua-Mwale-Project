@@ -14,16 +14,13 @@ function fetchMovies() {
 function renderMovies(movies) {
     const main = document.querySelector("detailed-info")
     movies.forEach(movie => {
-        const movieImage = document.getElementById("image");
+        const movieImage = document.createElementById("image");
         movieImage.innerHTML = `
         <img
         src="${resultType + title + description}"
         alt ="${id}"`
         main.appendChild(movieImage);
     });
-
-    const movieSearch = document.getElementById("search-movie")
-
 //adding event listeners  - click
     searchBar.addEventListener("click", () => {
     const searchInput = document.getElementById("search results")
